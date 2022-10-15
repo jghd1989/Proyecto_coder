@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - fan page</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body id="incio">
+    <header >
+        <nav class="navbar container">
+            <a class="navbar__link" href="../real_madrid/index.html">
+                <img src="./img/escudo_rm.png" alt="Logo del escudo del real madrid">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../real_madrid/historia.html">HISTORIA</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../real_madrid/estadio.html">ESTADIO</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../real_madrid/jugadores.html">JUGADORES</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../real_madrid/registro.html">REGISTRO</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="container">     
+
+        <section id="registro"> 
+
+            <article class="Registro_datos">
+                <form class="Registo_datos_seleccion" action="index.js" method="post">
+                    <label for="email">Introduce tu correo electrónico (*)</label>
+                    <input type="email" name="email" id="email" placeholder="Introduce tu mail">
+                    <label for="password">Introduzca la contraseña (*)</label>
+                    <input type="password" name="password" id="password" placeholder="Introduce la contraseña">
+                    <label for="password">Vuelva a introducir la contraseña (*)</label>
+                    <input type="password" name="password" id="password" placeholder="Introduce la contraseña">
+                    <label for="nombres">Nombres (*)</label>
+                    <input type="text" name="nombres" id="nombres" placeholder="Nombres">
+                    <label for="apellidos">Apellidos (*)</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                    <label for="fecha">Fecha de nacimiento (*)</label>
+                    <input type="date" name="fecha" id="fecha" placeholder="Fecha de Nacimiento">
+                    
+                    <label for="pais">País (*)</label>
+                    <select name="pais" id="">
+                        <option value="pais">Argentina</option>
+                        <option value="pais">Venezuela</option>
+                    </select>
+
+                    <label for="sexo">sexo</label>
+                    <div class="sexo" name="sexo">
+                        <label for="">Hombre</label>
+                        <input type="radio" name="sexo" id="sexo" value="Hombre">
+                        <label for="">Mujer</label>
+                        <input type="radio" name="sexo" id="sexo" value="Mujer">
+                    </div>
+
+                    <label for="number">Teléfono</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="telefono">
+
+                    <label for="idioma">Idioma</label>
+                    <select name="idioma" id="idioma">
+                        <option value="idioma">Ingles</option>
+                        <option value="idioma">Español</option>
+                    </select>
+
+                    <div class="Registo_datos_seleccion_boton">
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+
+                    </div>
+
+                    
+                </form>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <h2>Siguenos...
+        </h2>
+        <figure class="imagen_footer">
+            <img src="img/redes_rm.png" alt="logo de redes sociales"></figure>
+    </footer>
+    
+</body>
+</html>

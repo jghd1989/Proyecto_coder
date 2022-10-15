@@ -1,0 +1,648 @@
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+/* VARIABLES */
+
+:root { 
+
+    /* PALETTE */
+    --primary: #7D04A7;
+    --secundary: #4E4848;
+    --ligh: #FFFFFF;
+    --accent: #36A5E4;
+
+    /* FONT SIZES */
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+
+    /* SPACINGS */
+
+    --sp-xxl: 12em;
+    --sp-xl: 8em;
+    --sp-lg: 5em;
+    --sp-md: 3.2em;
+    --sp-sm: 1.6em;
+    --sp-xs: 0.8em;
+
+}
+
+/* NORMALIZE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--secundary)
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    font-size: var(--sp-sm);
+    text-decoration: none;
+    color: var(--secundary);
+}
+.container {    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+
+header{
+    padding: var(--sp-sm);
+    background-color: var(--accent);
+}
+
+/* .navbar .navbar__link {
+    display: inline-block;
+}
+
+.navbar .menu {
+    display: inline-block;
+}
+
+.navbar .menu .menu__item {
+    display: inline-block;
+} */
+
+.navbar .menu .menu__link {
+    color: var(--ligh);
+    
+    
+}
+
+.navbar .menu .menu__link:hover {
+    background-color: var(--ligh);
+    color: var(--primary);
+}
+
+.menu .menu__link:{
+    padding: var(--sp-sm);
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbar .menu .menu__link {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--sp-xs);
+}
+
+/** HISTORIA**/
+
+#historia{
+    background-color: #7D04A7;
+    padding-top: var(--sp-lg);
+    padding-bottom: var(--sp-lg);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.historiaRM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--ligh);
+}
+
+.historiaRM .historiaRM__titulo  {
+
+    font-size: var(--sp-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historiaRM .historiaRM__link  {
+
+    font-size: var(--sp-md);
+    display: flex;
+    justify-content: flex-end;
+    color: var(--ligh);
+}
+
+/** PPAL HISTORIA**/
+
+#ppal_historia{
+
+    background-color: #7D04A7;
+    color: var(--ligh);
+    font-size: var(--text-sp);
+    margin-top: -0.4%;
+
+}
+.ppal_historia_inicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ppal_historia_inicio_titulo{
+
+    font-size: var(--sp-sm);
+    display: flex;
+    justify-content: center;
+
+}
+
+.ppal_historia_inicio_p1{
+
+    display: flex;
+    flex-direction: column;
+    margin: var(--sp-xs);
+}
+
+.ppal_historia_inicio_p2{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--sp-sm);
+    margin-bottom: var(--sp-sm);
+    margin-left: var(--sp-xs);
+}
+
+.ppal_historia_inicio_p2text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: var(--sp-md);
+}
+
+.ppal_historia_inicio_p3{
+    margin: var(--sp-xs);
+
+}
+
+
+/** ESTADIO **/
+
+#estadio {
+    background-color: #36A5E4;
+    padding-top: var(--sp-lg);
+    padding-bottom: var(--sp-lg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.estadio__contenido {
+
+    display: flex;
+    justify-content: space-between
+}
+
+.estadio__contenido .estadio_texto {
+color: var(--ligh);
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+margin: var(--sp-md);
+
+}
+
+.estadio__contenido .estadio_texto .estadio_texto_titulo {
+
+    font-size: var(--sp-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.estadio__contenido .estadio_texto .estadio_texto_parrafo {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.estadio__contenido .estadio_texto .estadio_texto_link {
+
+color: var(--ligh);
+font-size: var(--sp-md);
+display: flex;
+justify-content: flex-end;
+
+} 
+
+
+/** JUGADORES **/
+
+#jugadoresppal{
+
+    background-color: var(--secundary);
+    padding-top: var(--sp-lg);
+    padding-bottom: var(--sp-lg);
+    color: var(--ligh);
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--sp-xs);
+
+}
+
+.jugadores_courtois{
+    margin: 10px;
+}
+
+.jugadores_alaba{
+    margin: 10px;
+}
+.jugadores_kroos{
+    margin: 10px;
+}
+.jugadores_rodrigo{
+    margin: 10px;
+}
+
+
+#jugadores{
+
+    background-color: var(--secundary);
+    padding-top: var(--sp-lg);
+    padding-bottom: var(--sp-lg);
+    color: var(--ligh);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: var(--sp-xs);
+
+    
+}
+
+.jugadores_courtois {
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+margin-left: var(--sp-md);
+
+
+}
+
+.jugadores_courtois .jugadores_courtois_datos{
+
+    background-color: #36A5E4;
+}
+
+
+.jugadores_alaba .jugadores_alaba_datos{
+
+    background-color: #36A5E4;
+}
+
+.jugadores_kroos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    }
+
+.jugadores_kroos .jugadores_kroos_datos{
+
+    background-color: #36A5E4;
+}
+
+.jugadores_rodrigo .jugadores_rodrigo_datos{
+
+    background-color: #36A5E4;
+    margin-right: var(--sp-md);
+}
+
+.jugadores_rodrigo .jugadores_rodrigo_link{
+
+    color: var(--ligh);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-right: var(--sp-md);
+    
+
+}
+
+/** Estadio**/
+
+.estadio_1{    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--ligh);
+    background-color: #36A5E4;
+    
+}
+
+.estadio_1_title{
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-md);
+    margin-top: var(--sp-xs);
+}
+
+.estadio_1_text {
+
+    font-size: var(--sp-sm);
+    margin: var(--sp-xs);
+    color: var(--ligh);
+    
+}
+
+.estadio_contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--ligh);
+    background-color: #36A5E4;
+
+}
+
+.estadio_contenido_titulo{
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-md);
+    margin-top: var(--sp-xs);
+
+}
+
+.estadio_contenido_text{
+
+    font-size: var(--sp-sm);
+    margin: var(--sp-xs);
+    color: var(--ligh)
+}
+
+
+/** JUGADORES PPAL **/
+
+
+.Thibaut{
+    display: flex;
+    justify-content:center;
+}
+
+.Thibaut_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.carvajal{
+    display: flex;
+    justify-content:center;
+}
+
+.carvajal_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.David{
+    display: flex;
+    justify-content:center;
+}
+
+.David_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Nacho{
+    display: flex;
+    justify-content:center;
+}
+
+.Nacho_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Nacho{
+    display: flex;
+    justify-content:center;
+}
+
+.Nacho_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Modric{
+    display: flex;
+    justify-content:center;
+}
+
+.Modric_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Toni{
+    display: flex;
+    justify-content:center;
+}
+
+.Toni_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Camavinga{
+    display: flex;
+    justify-content:center;
+}
+
+.Camavinga_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Valverde{
+    display: flex;
+    justify-content:center;
+}
+
+.Valverde_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Aurelien{
+    display: flex;
+    justify-content:center;
+}
+
+.Aurelien_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Hazard{
+    display: flex;
+    justify-content:center;
+}
+
+.Hazard_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+.Benzema{
+    display: flex;
+    justify-content:center;
+}
+
+.Benzema_datos{
+
+    background-color: #4E4848;
+    color: #FFFFFF;
+    height: 400px;
+    width: 350px;
+    font-size: var(--text-md);
+    margin: var(--sp-sm);
+}
+
+
+/** REGISTRO **/
+
+.Registo_datos_seleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--secundary);
+    margin: var(--sp-xs);
+    font-size: var(--sp-sm);
+    
+}
+
+.Registo_datos_seleccion_boton{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: var(--sp-xs)
+
+}
+
+/** FOOTER **/
+
+
+footer{
+    background-color: #36A5E4;
+    color: var(--ligh);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: var(--text-md);
+
+}
+
+.imagen_footer{
+    margin-right: var(--sp-md);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

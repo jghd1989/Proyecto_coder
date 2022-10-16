@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Madrid - fan page</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css"/>
+
 </head>
 <body id="incio">
     <header >
         <nav class="navbar container">
-            <a class="navbar__link" href="C:/Users/joseh/OneDrive/Escritorio/real_madrid/index.html">
+            <a class="navbar__link" href="./index.html">
                 <img src="./img/escudo_rm.png" alt="Logo del escudo del real madrid">
             </a>
             <ul class="menu">
@@ -21,10 +23,10 @@
                     <a class="menu__link" href="#estadio">ESTADIO</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#jugadores">JUGADORES</a>
+                    <a class="menu__link" href="#jugadoresppal">JUGADORES</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="../real_madrid/registro.html">REGISTRO</a>
+                    <a class="menu__link" href="./pages/registro.html">REGISTRO</a>
                 </li>
             </ul>
         </nav>
@@ -35,52 +37,57 @@
         <img src="./img/banner_rm.png" alt="">
     </section>
 
-    <main class="container">     
-
-        <section id="historia"> 
-
+    <main>   
+        <div class="primario">
+            <section id="historia" class="container"> 
                 <article>
                     <img src="./img/medio_escudo_rm.png" alt="Medio escudo del real madrid">
                 </article>
-
-            <div class="historiaRM"> 
-
-                <article>
-                    <h1 class="historiaRM__titulo">HISTORIA DEL CLUB</h1>
-                    <p>El Real Madrid fue fundado en 1902. Julián Palacios es el primer presidente, pero fue Juan Padrós, catalán y de Barcelona, quien formalmente constituyó la institución ese año. El interés en el fútbol crecía tanto en España que el Madrid propuso realizar un torneo en honor al rey Alfonso XIII.</p>
-                    <a href="../real_madrid/historia.html">ver mas...</a>
-                </article>
-            </div>
-
-        </section>
+                <div class="historiaRM"> 
+                    <article>
+                        <h1 class="historiaRM__titulo">HISTORIA DEL CLUB</h1>
+                        <p>El Real Madrid fue fundado en 1902. Julián Palacios es el primer presidente, pero fue Juan Padrós, catalán y de Barcelona, quien formalmente constituyó la institución ese año. El interés en el fútbol crecía tanto en España que el Madrid propuso realizar un torneo en honor al rey Alfonso XIII.</p>
+                        <a class="link_ver_mas" href="./pages/historia.html" >ver mas...
+                            <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.0607 13.0607C37.6464 12.4749 37.6464 11.5251 37.0607 10.9393L27.5147 1.3934C26.9289 0.807612 25.9792 0.807612 25.3934 1.3934C24.8076 1.97918 24.8076 2.92893 25.3934 3.51472L33.8787 12L25.3934 20.4853C24.8076 21.0711 24.8076 22.0208 25.3934 22.6066C25.9792 23.1924 26.9289 23.1924 27.5147 22.6066L37.0607 13.0607ZM0 13.5H36V10.5H0V13.5Z" fill="white"/>
+                            </svg>
+                            </a>
+                    </article>
+                </div>
+            </section>
+        </div>  
+        <div class="secundario">
+            <section id="estadio" class="container ">
             
-        <section id="estadio">
-            
-            <div class="estadio__contenido">
+                <div class="estadio__contenido">
+    
+                    <article class="estadio_texto">
+                        <h1 class="estadio_texto_titulo">Estadio Santiago Bernabéu</h1>
+                        <p class="estadio_texto_parrafo">El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81 044 espectadores. El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».
+                        </p>
+                        <a href="./pages/estadio.html">ver mas...</a>
+                    </article>
+                    <article class="estadio_imgs">
+                        <figure class="img__estadio">
+                            <img src="./img/santiago_bernabeu_1.jpg" alt="foto 1 del bernabue">
+                        </figure>
+                        <figure class="img__estadio">
+                            <img src="./img/santiago_bernabeu_2.jpg" alt="foto 2 del bernabue">
+                        </figure>
+                        <figure class="img__estadio">
+                            <img src="./img/santiago_bernabeu_3.jpg" alt="foto 3 del bernabue">
+                        </figure>
+                        <figure class="img__estadio">
+                            <img src="./img/santiago_bernabeu_4.jpg" alt="foto 4 del bernabue">
+                        </figure>
+                    </article>
+                </div>
+            </section>
+        </div>            
+        <div class="terciario">
+            <section id="jugadoresppal" class="container row">
 
-                <article class="estadio_texto">
-                    <h1 class="estadio_texto_titulo">Estadio Santiago Bernabéu</h1>
-                    <p class="estadio_texto_parrafo">El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81 044 espectadores. El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».
-                    </p>
-                    <a href="../real_madrid/estadio.html">ver mas...</a>
-                </article>
-                <article class="estadio_imgs">
-                    <figure>
-                        <img src="./img/banner_2.jpg" alt="foto 1 del bernabue">
-                    </figure>
-                    <figure>
-                        <img src="./img/bernabeu_1.jpg" alt="foto 2 del bernabue">
-                    </figure>
-                    <figure>
-                        <img src="./img/bernabeu_3.jpg" alt="foto 3 del bernabue">
-                    </figure>
-                </article>
-            </div>
-        </section>
-
-        <section id="jugadoresppal">
-
-                <article class="jugadores_courtois">
+                <article class="jugadores_courtois col-12 col-md-4 col-lg-2">
                     <figure>
                         <img src="./img/courtois.png" alt="foto de courtois">
                     </figure>
@@ -89,7 +96,7 @@
                         Fecha de nacimiento: 11/05/1992
                         Posición: Portero</p>
                 </article>
-                <article class="jugadores_alaba">
+                <article class="jugadores_alaba col-12 col-md-4 col-lg-2">
                     <figure>
                         <img src="./img/alaba.png" alt="foto de alaba">
                     </figure>
@@ -98,7 +105,7 @@
                     Fecha de nacimiento: 24/06/1992
                     Posición: Defensa</p>
                 </article>
-                <article class="jugadores_kroos">
+                <article class="jugadores_kroos col-12 col-md-4 col-lg-2">
                     <figure>
                         <img src="./img/tonikross.png" alt="foto de kroos">
                     </figure>
@@ -108,7 +115,7 @@
                         Posición: Centrocampista
                     </p>
                 </article>
-                <article class="jugadores_rodrigo">
+                <article class="jugadores_rodrigo col-12 col-md-4 col-lg-2">
                     <figure>
                         <img src="./img/rodrigo.png" alt="foto de rodrigo">
                     </figure>
@@ -116,11 +123,10 @@
                         Lugar de nacimiento: Osasco (Brasil)
                         Fecha de nacimiento: 09/01/2001
                         Posición: Delantero</p>
-                        <a href="../real_madrid/jugadores.html" class="jugadores_rodrigo_link">ver mas...</a>
+                    <a href="./pages/jugadores.html" class="jugadores_rodrigo_link">ver mas...</a>
                 </article>
-
-
-        </section>
+            </section>
+        </div>
 
     </main>
     <footer>
@@ -129,6 +135,7 @@
         <figure class="imagen_footer">
             <img src="img/redes_rm.png" alt="logo de redes sociales"></figure>
     </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
     
 </body>
 </html>

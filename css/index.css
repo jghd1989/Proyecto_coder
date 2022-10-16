@@ -40,6 +40,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+}
 
 html {
 
@@ -60,12 +63,23 @@ ul{
 a{
     font-size: var(--sp-sm);
     text-decoration: none;
-    color: var(--secundary);
+    color: var(--ligh)
 }
-.container {    
+
+.primario{
+    background-color: var(--primary)
+}
+.secundario{
+    background-color: var(--accent)
+}
+.terciario{
+    background-color: var(--secundary)
+}
+
+/* .container {    
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 /* HEADER */
 
@@ -87,10 +101,35 @@ header{
     display: inline-block;
 } */
 
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .navbar__link {
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
 .navbar .menu .menu__link {
+    display: flex;
+    justify-content: space-between;
     color: var(--ligh);
-    
-    
+    padding: 1rem;
 }
 
 .navbar .menu .menu__link:hover {
@@ -98,27 +137,13 @@ header{
     color: var(--primary);
 }
 
-.menu .menu__link:{
-    padding: var(--sp-sm);
 
+/** BANNER**/
 
-}
+#banner{
+    display: grid;
+    place-items: center;
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar .menu {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.navbar .menu .menu__link {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--sp-xs);
 }
 
 /** HISTORIA**/
@@ -129,7 +154,7 @@ header{
     padding-bottom: var(--sp-lg);
     display: flex;
     justify-content: space-between;
-
+    gap: var(--sp-md);
 }
 
 .historiaRM {
@@ -138,14 +163,18 @@ header{
     align-items: center;
     flex-direction: column;
     color: var(--ligh);
+    gap: 1rem;
+    flex: 1 1 50%;
+
 }
 
 .historiaRM .historiaRM__titulo  {
 
-    font-size: var(--sp-lg);
+    font-size: var(--text-lg);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.2rem;
 }
 
 .historiaRM .historiaRM__link  {
@@ -218,7 +247,17 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex: 1 1 50%;
+    gap: 1rem;
 }
+
+.estadio_imgs {
+    display: grid ;
+    grid-template-columns: repeat(2 1fr) ; 
+    grid-template-rows: repeat(2 1fr) ;
+    gap: var(--sp-xs) ;
+}
+
 
 .estadio__contenido {
 
@@ -633,7 +672,22 @@ footer{
     margin-right: var(--sp-md);
 }
 
+.link_ver_mas {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: var(--text-sm);
+    gap:var(--sp-sm);
 
+}
+
+.link_ver_mas: svg {
+    transition: transform .3s ease-in;
+}
+
+.link_ver_mas:hover svg {
+    transform: translateX(20px);
+}
 
 
 

@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 
+
 /* VARIABLES */
 
 :root { 
@@ -157,6 +158,7 @@ header{
     gap: var(--sp-md);
 }
 
+
 .historiaRM {
     display: flex;
     justify-content: center;
@@ -192,9 +194,14 @@ header{
     background-color: #7D04A7;
     color: var(--ligh);
     font-size: var(--text-sp);
-    margin-top: -0.4%;
+    max-height: max-content;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
 
 }
+
+
 .ppal_historia_inicio{
     display: flex;
     justify-content: center;
@@ -238,6 +245,7 @@ header{
 }
 
 
+
 /** ESTADIO **/
 
 #estadio {
@@ -245,10 +253,11 @@ header{
     padding-top: var(--sp-lg);
     padding-bottom: var(--sp-lg);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     flex: 1 1 50%;
     gap: 1rem;
+
 }
 
 .estadio_imgs {
@@ -313,6 +322,7 @@ justify-content: flex-end;
     display: flex;
     justify-content: space-around;
     font-size: var(--sp-xs);
+    margin: 0%;
 
 }
 
@@ -338,9 +348,11 @@ justify-content: flex-end;
     padding-bottom: var(--sp-lg);
     color: var(--ligh);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     font-size: var(--sp-xs);
+
+    
 
     
 }
@@ -449,6 +461,8 @@ margin-left: var(--sp-md);
 
 
 /** JUGADORES PPAL **/
+
+
 
 
 .Thibaut{

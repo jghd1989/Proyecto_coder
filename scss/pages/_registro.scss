@@ -1,0 +1,21 @@
+/** REGISTRO **/
+.Registo_datos_seleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--secundary);
+    margin: var(--sp-xs);
+    font-size: var(--sp-sm);
+    
+}
+
+.Registo_datos_seleccion_boton{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: var(--sp-xs)
+
+}

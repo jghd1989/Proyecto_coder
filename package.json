@@ -1,0 +1,25 @@
+{
+  "name": "real_madrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/index.scss css/translated.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jghd1989/Proyecto_coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jghd1989/Proyecto_coder/issues"
+  },
+  "homepage": "https://github.com/jghd1989/Proyecto_coder#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

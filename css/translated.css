@@ -1,86 +1,89 @@
 /* IMPORTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+/* MISC */
 /* VARIABLES */
-
-:root { 
-
-    /* PALETTE */
-    --primary: #7D04A7;
-    --secundary: #4E4848;
-    --ligh: #FFFFFF;
-    --accent: #36A5E4;
-
-    /* FONT SIZES */
-    --text-xxl: 4.8em;
-    --text-xl: 3.6em;
-    --text-lg: 3.2em;
-    --text-md: 2.2em;
-    --text-sm: 1.6em;
-    --text-xs: 1.2em;
-
-    /* SPACINGS */
-
-    --sp-xxl: 12em;
-    --sp-xl: 8em;
-    --sp-lg: 5em;
-    --sp-md: 3.2em;
-    --sp-sm: 1.6em;
-    --sp-xs: 0.8em;
-
+:root {
+  /* PALETTE */
+  --primary: #7D04A7;
+  --secundary: #4E4848;
+  --ligh: #FFFFFF;
+  --accent: #36A5E4;
+  /* FONT SIZES */
+  --text-xxl: 4.8em;
+  --text-xl: 3.6em;
+  --text-lg: 3.2em;
+  --text-md: 2.2em;
+  --text-sm: 1.6em;
+  --text-xs: 1.2em;
+  /* SPACINGS */
+  --sp-xxl: 12em;
+  --sp-xl: 8em;
+  --sp-lg: 5em;
+  --sp-md: 3.2em;
+  --sp-sm: 1.6em;
+  --sp-xs: 0.8em;
 }
 
-/* NORMALIZE
-
-*{
+/* NORMALIZE */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-img{
+
+img {
   width: 100%;
 }
 
 html {
-
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--text-sm);
-  color: var(--secundary)
-
+  color: var(--secundary);
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-a{
+a {
   font-size: var(--sp-sm);
   text-decoration: none;
-  color: var(--ligh)
+  color: var(--ligh);
 }
 
-.primario{
-  background-color: var(--primary)
-}
-.secundario{
-  background-color: var(--accent)
-}
-.terciario{
-  background-color: var(--secundary)
+.primario {
+  background-color: var(--primary);
 }
 
+.secundario {
+  background-color: var(--accent);
+}
+
+.terciario {
+  background-color: var(--secundary);
+}
+
+/* PARTIALS */
+/** FOOTER **/
+footer {
+  background-color: #36A5E4;
+  color: var(--ligh);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: var(--text-md);
+}
+
+.imagen_footer {
+  margin-right: var(--sp-md);
+}
 
 /* HEADER */
-
-
-/* header{
+header {
   padding: var(--sp-sm);
   background-color: var(--accent);
 }
@@ -101,7 +104,6 @@ a{
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .navbar .menu .menu__link {
@@ -116,18 +118,58 @@ a{
   color: var(--primary);
 }
 
+/* PAGES */
+/** Estadio**/
+.estadio_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--ligh);
+  background-color: #36A5E4;
+}
+
+.estadio_1_title {
+  display: flex;
+  justify-content: center;
+  font-size: var(--text-md);
+  margin-top: var(--sp-xs);
+}
+
+.estadio_1_text {
+  font-size: var(--sp-sm);
+  margin: var(--sp-xs);
+  color: var(--ligh);
+}
+
+.estadio_contenido {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--ligh);
+  background-color: #36A5E4;
+}
+
+.estadio_contenido_titulo {
+  display: flex;
+  justify-content: center;
+  font-size: var(--text-md);
+  margin-top: var(--sp-xs);
+}
+
+.estadio_contenido_text {
+  font-size: var(--sp-sm);
+  margin: var(--sp-xs);
+  color: var(--ligh);
+}
 
 /** BANNER**/
-
-#banner{
+#banner {
   display: grid;
   place-items: center;
-
 }
 
 /** HISTORIA**/
-
-#historia{
+#historia {
   background-color: #7D04A7;
   padding-top: var(--sp-lg);
   padding-bottom: var(--sp-lg);
@@ -135,7 +177,6 @@ a{
   justify-content: space-between;
   gap: var(--sp-md);
 }
-
 
 .historiaRM {
   display: flex;
@@ -145,20 +186,17 @@ a{
   color: var(--ligh);
   gap: 1rem;
   flex: 1 1 50%;
-
 }
 
-.historiaRM .historiaRM__titulo  {
-
+.historiaRM .historiaRM__titulo {
   font-size: var(--text-lg);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2.2rem;
-} */
+}
 
-/* .historiaRM .historiaRM__link  {
-
+.historiaRM .historiaRM__link {
   font-size: var(--sp-md);
   display: flex;
   justify-content: flex-end;
@@ -166,9 +204,7 @@ a{
 }
 
 /** PPAL HISTORIA**/
-
-#ppal_historia{
-
+#ppal_historia {
   background-color: #7D04A7;
   color: var(--ligh);
   font-size: var(--text-sp);
@@ -176,33 +212,27 @@ a{
   max-width: 100%;
   display: grid;
   place-items: center;
-
 }
 
-
-.ppal_historia_inicio{
+.ppal_historia_inicio {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.ppal_historia_inicio_titulo{
-
+.ppal_historia_inicio_titulo {
   font-size: var(--sp-sm);
   display: flex;
   justify-content: center;
-
 }
 
-.ppal_historia_inicio_p1{
-
+.ppal_historia_inicio_p1 {
   display: flex;
   flex-direction: column;
   margin: var(--sp-xs);
 }
 
-.ppal_historia_inicio_p2{
-
+.ppal_historia_inicio_p2 {
   display: flex;
   flex-direction: row;
   margin-top: var(--sp-sm);
@@ -210,22 +240,18 @@ a{
   margin-left: var(--sp-xs);
 }
 
-.ppal_historia_inicio_p2text{
+.ppal_historia_inicio_p2text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: var(--sp-md);
 }
 
-.ppal_historia_inicio_p3{
+.ppal_historia_inicio_p3 {
   margin: var(--sp-xs);
-
 }
 
-
-
 /** ESTADIO **/
-
 #estadio {
   background-color: #36A5E4;
   padding-top: var(--sp-lg);
@@ -235,64 +261,51 @@ a{
   flex-direction: column;
   flex: 1 1 50%;
   gap: 1rem;
-
 }
 
 .estadio_imgs {
-  display: grid ;
-  grid-template-columns: repeat(2 1fr) ; 
-  grid-template-rows: repeat(2 1fr) ;
-  gap: var(--sp-xs) ;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(2 1fr);
+  gap: var(--sp-xs);
 }
 
-
 .estadio__contenido {
-
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .estadio__contenido .estadio_texto {
-color: var(--ligh);
-display: flex;
-align-items: center;
-justify-content:center;
-flex-direction: column;
-margin: var(--sp-md);
-
+  color: var(--ligh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: var(--sp-md);
 }
 
 .estadio__contenido .estadio_texto .estadio_texto_titulo {
-
   font-size: var(--sp-md);
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .estadio__contenido .estadio_texto .estadio_texto_parrafo {
-
-display: flex;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .estadio__contenido .estadio_texto .estadio_texto_link {
-
-color: var(--ligh);
-font-size: var(--sp-md);
-display: flex;
-justify-content: flex-end;
-
-} 
-
+  color: var(--ligh);
+  font-size: var(--sp-md);
+  display: flex;
+  justify-content: flex-end;
+}
 
 /** JUGADORES **/
-
-#jugadoresppal{
-
+#jugadoresppal {
   background-color: var(--secundary);
   padding-top: var(--sp-lg);
   padding-bottom: var(--sp-lg);
@@ -301,26 +314,25 @@ justify-content: flex-end;
   justify-content: space-around;
   font-size: var(--sp-xs);
   margin: 0%;
-
 }
 
-.jugadores_courtois{
+.jugadores_courtois {
   margin: 10px;
 }
 
-.jugadores_alaba{
-  margin: 10px;
-}
-.jugadores_kroos{
-  margin: 10px;
-}
-.jugadores_rodrigo{
+.jugadores_alaba {
   margin: 10px;
 }
 
+.jugadores_kroos {
+  margin: 10px;
+}
 
-#jugadores{
+.jugadores_rodrigo {
+  margin: 10px;
+}
 
+#jugadores {
   background-color: var(--secundary);
   padding-top: var(--sp-lg);
   padding-bottom: var(--sp-lg);
@@ -329,127 +341,70 @@ justify-content: flex-end;
   justify-content: center;
   flex-direction: column;
   font-size: var(--sp-xs);
-
-  
-
-  
 }
 
 .jugadores_courtois {
-
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-margin-left: var(--sp-md);
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: var(--sp-md);
 }
 
-.jugadores_courtois .jugadores_courtois_datos{
-
+.jugadores_courtois .jugadores_courtois_datos {
   background-color: #36A5E4;
 }
 
-
-.jugadores_alaba .jugadores_alaba_datos{
-
+.jugadores_alaba .jugadores_alaba_datos {
   background-color: #36A5E4;
 }
 
 .jugadores_kroos {
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
-  }
+}
 
-.jugadores_kroos .jugadores_kroos_datos{ */
-/* 
+.jugadores_kroos .jugadores_kroos_datos {
   background-color: #36A5E4;
 }
 
-.jugadores_rodrigo .jugadores_rodrigo_datos{
-
+.jugadores_rodrigo .jugadores_rodrigo_datos {
   background-color: #36A5E4;
   margin-right: var(--sp-md);
 }
 
-.jugadores_rodrigo .jugadores_rodrigo_link{
-
+.jugadores_rodrigo .jugadores_rodrigo_link {
   color: var(--ligh);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-evenly;
   margin-right: var(--sp-md);
-  
-
 }
 
-/** Estadio**/
-
-.estadio_1{    
+.link_ver_mas {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--ligh);
-  background-color: #36A5E4;
-  
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--text-sm);
+  gap: var(--sp-sm);
 }
 
-.estadio_1_title{
-  display: flex;
-  justify-content: center;
-  font-size: var(--text-md);
-  margin-top: var(--sp-xs);
+.link_ver_mas svg {
+  transition: transform 0.3s ease-in;
 }
 
-.estadio_1_text {
-
-  font-size: var(--sp-sm);
-  margin: var(--sp-xs);
-  color: var(--ligh);
-  
+.link_ver_mas:hover svg {
+  transform: translateX(20px);
 }
-
-.estadio_contenido{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--ligh);
-  background-color: #36A5E4;
-
-}
-
-.estadio_contenido_titulo{
-  display: flex;
-  justify-content: center;
-  font-size: var(--text-md);
-  margin-top: var(--sp-xs);
-
-}
-
-.estadio_contenido_text{
-
-  font-size: var(--sp-sm);
-  margin: var(--sp-xs);
-  color: var(--ligh)
-}
-
 
 /** JUGADORES PPAL **/
-
-
-
-
-.Thibaut{
+.Thibaut {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Thibaut_datos{
-
+.Thibaut_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -458,13 +413,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.carvajal{
+.carvajal {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.carvajal_datos{
-
+.carvajal_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -473,13 +427,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.David{
+.David {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.David_datos{
-
+.David_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -488,13 +441,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Nacho{
+.Nacho {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Nacho_datos{
-
+.Nacho_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -503,13 +455,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Nacho{
+.Nacho {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Nacho_datos{
-
+.Nacho_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -518,28 +469,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Modric{
-  display: flex; */
-  /* justify-content:center;
-}
-
-.Modric_datos{
-
-  background-color: #4E4848;
-  color: #FFFFFF;
-  height: 400px;
-  width: 350px;
-  font-size: var(--text-md);
-  margin: var(--sp-sm);
-}
-
-.Toni{
+.Modric {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Toni_datos{
-
+.Modric_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -548,13 +483,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Camavinga{
+.Toni {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Camavinga_datos{
-
+.Toni_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -563,13 +497,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Valverde{
+.Camavinga {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Valverde_datos{
-
+.Camavinga_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -578,13 +511,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Aurelien{
+.Valverde {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Aurelien_datos{
-
+.Valverde_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -593,13 +525,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Hazard{
+.Aurelien {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Hazard_datos{
-
+.Aurelien_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -608,13 +539,12 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
-.Benzema{
+.Hazard {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
-.Benzema_datos{
-
+.Hazard_datos {
   background-color: #4E4848;
   color: #FFFFFF;
   height: 400px;
@@ -623,10 +553,22 @@ margin-left: var(--sp-md);
   margin: var(--sp-sm);
 }
 
+.Benzema {
+  display: flex;
+  justify-content: center;
+}
+
+.Benzema_datos {
+  background-color: #4E4848;
+  color: #FFFFFF;
+  height: 400px;
+  width: 350px;
+  font-size: var(--text-md);
+  margin: var(--sp-sm);
+}
 
 /** REGISTRO **/
-
-.Registo_datos_seleccion{
+.Registo_datos_seleccion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -634,50 +576,14 @@ margin-left: var(--sp-md);
   color: var(--secundary);
   margin: var(--sp-xs);
   font-size: var(--sp-sm);
-  
 }
 
-.Registo_datos_seleccion_boton{
-
+.Registo_datos_seleccion_boton {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  margin-top: var(--sp-xs)
-
+  margin-top: var(--sp-xs);
 }
 
-/** FOOTER **/
-
-
-footer{
-  background-color: #36A5E4;
-  color: var(--ligh);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: var(--text-md);
-
-}
-
-.imagen_footer{
-  margin-right: var(--sp-md);
-} */
-
-/* .link_ver_mas {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: var(--text-sm);
-  gap:var(--sp-sm);
-
-}
-
-.link_ver_mas svg {
-  transition: transform .3s ease-in;
-
-
-.link_ver_mas:hover svg{
-  transform: translateX(20px)}
-
-}  */
+/*# sourceMappingURL=translated.css.map */

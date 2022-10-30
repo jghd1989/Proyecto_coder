@@ -1,0 +1,42 @@
+/* NORMALIZE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--secundary)
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    font-size: var(--sp-sm);
+    text-decoration: none;
+    color: var(--ligh)
+}
+
+.primario{
+    background-color: var(--primary)
+}
+.secundario{
+    background-color: var(--accent)
+}
+.terciario{
+    background-color: var(--secundary)
+}

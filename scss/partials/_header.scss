@@ -1,0 +1,36 @@
+/* HEADER */
+header{
+    padding: var(--sp-sm);
+    background-color: var(--accent);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .navbar__link {
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar .menu .menu__link {
+    display: flex;
+    justify-content: space-between;
+    color: var(--ligh);
+    padding: 1rem;
+}
+
+.navbar .menu .menu__link:hover {
+    background-color: var(--ligh);
+    color: var(--primary);
+}

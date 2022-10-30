@@ -1,0 +1,49 @@
+/** Estadio**/
+
+.estadio_1{    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--ligh);
+    background-color: #36A5E4;
+    
+}
+
+.estadio_1_title{
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-md);
+    margin-top: var(--sp-xs);
+}
+
+.estadio_1_text {
+
+    font-size: var(--sp-sm);
+    margin: var(--sp-xs);
+    color: var(--ligh);
+    
+}
+
+.estadio_contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--ligh);
+    background-color: #36A5E4;
+
+}
+
+.estadio_contenido_titulo{
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-md);
+    margin-top: var(--sp-xs);
+
+}
+
+.estadio_contenido_text{
+
+    font-size: var(--sp-sm);
+    margin: var(--sp-xs);
+    color: var(--ligh)
+}

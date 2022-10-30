@@ -1,0 +1,17 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+/* MISC */
+@import "./misc/variables";
+@import "./misc/normalize";
+
+/* PARTIALS */
+@import "./partials/footer";
+@import "./partials/header";
+
+/* PAGES */
+@import "./pages/estadios";
+@import "./pages/historia";
+@import "./pages/index";
+@import "./pages/jugadores";
+@import "./pages/registro";

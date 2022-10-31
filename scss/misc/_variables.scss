@@ -26,3 +26,21 @@
     --sp-xs: 0.8em;
 
 }
+
+    /* MAPS */
+
+    $paddings:(
+        p-6: sp-xxl,
+        p-5: sp-xl,
+        p-4: sp-lg,
+        p-3: sp-md,
+        p-2: sp-sm,
+        p-1: sp-xs
+    );
+
+    @each $key, $value in $paddings {
+        .#{$key} {
+            padding: $value;
+        }
+        
+    }

@@ -24,6 +24,31 @@
   --sp-xs: 0.8em;
 }
 
+/* MAPS */
+.p-6 {
+  padding: sp-xxl;
+}
+
+.p-5 {
+  padding: sp-xl;
+}
+
+.p-4 {
+  padding: sp-lg;
+}
+
+.p-3 {
+  padding: sp-md;
+}
+
+.p-2 {
+  padding: sp-sm;
+}
+
+.p-1 {
+  padding: sp-xs;
+}
+
 /* NORMALIZE */
 * {
   margin: 0;
@@ -179,13 +204,13 @@ header {
 }
 
 .historiaRM {
+  color: var(--ligh);
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--ligh);
   gap: 1rem;
-  flex: 1 1 50%;
 }
 
 .historiaRM .historiaRM__titulo {
